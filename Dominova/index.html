@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominova — Modern Web Development Studio</title>
+  <meta name="description" content="Dominova is a premium web development studio crafting stunning websites, e-commerce platforms, and digital experiences that grow your business." />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <img src="logo.png" alt="Dominova" class="preloader-logo" />
+      <div class="preloader-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="logo.png" alt="Dominova" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#stats"     class="nav-link">Results</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline-purple">Get Quote</a>
+        <a href="#contact" class="btn btn-gradient">Hire Us →</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#home"      class="mob-link">Home</a></li>
+      <li><a href="#about"     class="mob-link">About</a></li>
+      <li><a href="#services"  class="mob-link">Services</a></li>
+      <li><a href="#portfolio" class="mob-link">Portfolio</a></li>
+      <li><a href="#stats"     class="mob-link">Results</a></li>
+      <li><a href="#contact"   class="mob-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-gradient mob-cta">Start a Project</a>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <!-- Floating blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="hero-container">
+        <div class="hero-chip fade-up">
+          <span class="chip-dot"></span>
+          Premium Web Development Studio
+        </div>
+
+        <h1 class="hero-title fade-up d1">
+          We Build <span class="grad-text">Modern Websites</span><br />
+          That <span class="grad-text-2">Grow</span> Your Business
+        </h1>
+
+        <p class="hero-sub fade-up d2">
+          From stunning landing pages to full-scale e-commerce platforms — Dominova crafts
+          high-performance digital experiences that convert visitors into loyal customers.
+        </p>
+
+        <div class="hero-cta fade-up d3">
+          <a href="#contact" class="btn btn-gradient btn-lg" id="hero-hire">
+            Start a Project
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn-ghost btn-lg" id="hero-work">View Our Work</a>
+        </div>
+
+        <!-- Mini stats bar -->
+        <div class="hero-proof fade-up d4">
+          <div class="proof-item">
+            <strong>10+</strong>
+            <span>Projects</span>
+          </div>
+          <div class="proof-sep"></div>
+          <div class="proof-item">
+            <strong>9+</strong>
+            <span>Happy Clients</span>
+          </div>
+          <div class="proof-sep"></div>
+          <div class="proof-item">
+            <strong>3 Yrs</strong>
+            <span>Experience</span>
+          </div>
+          <div class="proof-sep"></div>
+          <div class="proof-item">
+            <strong>100%</strong>
+            <span>Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero visual card -->
+      <div class="hero-visual fade-up d3">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="hc-dot red"></span>
+            <span class="hc-dot yellow"></span>
+            <span class="hc-dot green"></span>
+            <span class="hc-url">dominova.studio</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="hc-logo-area">
+              <img src="logo.png" alt="Dominova" class="hc-logo" />
+            </div>
+            <div class="hc-lines">
+              <div class="hc-line w80 purple"></div>
+              <div class="hc-line w60"></div>
+              <div class="hc-line w90"></div>
+              <div class="hc-line w50"></div>
+            </div>
+            <div class="hc-badges">
+              <span class="hc-badge purple">Web Dev</span>
+              <span class="hc-badge pink">UI/UX</span>
+              <span class="hc-badge gold">E-commerce</span>
+            </div>
+          </div>
+        </div>
+        <!-- Floating decorations -->
+        <div class="float-card fc-1">
+          <span class="fc-icon">⚡</span>
+          <div>
+            <strong>Fast Delivery</strong>
+            <span>On time, every time</span>
+          </div>
+        </div>
+        <div class="float-card fc-2">
+          <span class="fc-icon">🎯</span>
+          <div>
+            <strong>100% Client Satisfaction</strong>
+            <span>We don't stop until you're thrilled</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-label fade-up">Who We Are</div>
+        <div class="about-grid">
+          <div class="about-left fade-left">
+            <h2 class="section-title">
+              A <span class="grad-text">Creative Studio</span><br />Built for the Digital Age
+            </h2>
+            <p class="about-para">
+              Dominova is a cutting-edge web development studio founded by a passionate team of designers and developers who believe every brand deserves a digital presence that reflects its true value.
+            </p>
+            <p class="about-para">
+              We combine strategic thinking with premium design to create websites that <strong>perform</strong> — converting traffic into real business growth for startups and established brands alike.
+            </p>
+            <div class="about-pills">
+              <span class="pill purple">🚀 Startup Focused</span>
+              <span class="pill pink">💎 Premium Design</span>
+              <span class="pill gold">⚡ Fast Delivery</span>
+              <span class="pill blue">🔍 SEO Ready</span>
+            </div>
+          </div>
+          <div class="about-right fade-right">
+            <div class="about-card white-card">
+              <div class="ac-icon">🌐</div>
+              <h3>Our Mission</h3>
+              <p>Empower businesses with modern digital solutions that drive real, measurable growth.</p>
+            </div>
+            <div class="about-card white-card about-card-shifted">
+              <div class="ac-icon">✨</div>
+              <h3>Our Vision</h3>
+              <p>Become the most trusted web development partner for startups across South Asia and globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="services section">
+      <div class="container">
+        <div class="section-label fade-up">What We Offer</div>
+        <h2 class="section-title text-center fade-up">
+          Our <span class="grad-text">Premium Services</span>
+        </h2>
+        <p class="section-sub text-center fade-up">
+          Everything you need to establish a powerful online presence — beautifully crafted, strategically built.
+        </p>
+
+        <div class="services-grid">
+
+          <div class="service-card white-card fade-up" id="svc-web">
+            <div class="svc-icon-wrap purple-bg">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h3 class="svc-title">Website Development</h3>
+            <p class="svc-desc">Custom-built, blazing-fast websites optimized for performance, SEO, and conversions.</p>
+            <ul class="svc-list">
+              <li><span class="check purple">✓</span> Responsive Design</li>
+              <li><span class="check purple">✓</span> SEO Optimized</li>
+              <li><span class="check purple">✓</span> Lightning Fast</li>
+            </ul>
+            <div class="svc-tag purple-light">Most Popular</div>
+          </div>
+
+          <div class="service-card white-card service-card-featured fade-up d1" id="svc-ecom">
+            <div class="featured-ribbon">⭐ Top Choice</div>
+            <div class="svc-icon-wrap pink-bg">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            </div>
+            <h3 class="svc-title">E-commerce Sites</h3>
+            <p class="svc-desc">End-to-end e-commerce solutions with secure payments and seamless shopping experiences.</p>
+            <ul class="svc-list">
+              <li><span class="check pink">✓</span> Secure Payments</li>
+              <li><span class="check pink">✓</span> Product Management</li>
+              <li><span class="check pink">✓</span> Mobile Commerce</li>
+            </ul>
+            <a href="#contact" class="btn btn-gradient btn-sm">Get Started</a>
+          </div>
+
+          <div class="service-card white-card fade-up d2" id="svc-uiux">
+            <div class="svc-icon-wrap gold-bg">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            </div>
+            <h3 class="svc-title">UI/UX Design</h3>
+            <p class="svc-desc">Beautiful, intuitive interfaces crafted with precision that users love and brands are proud of.</p>
+            <ul class="svc-list">
+              <li><span class="check gold">✓</span> Figma Prototypes</li>
+              <li><span class="check gold">✓</span> User Research</li>
+              <li><span class="check gold">✓</span> Pixel Perfect</li>
+            </ul>
+          </div>
+
+          <div class="service-card white-card fade-up d3" id="svc-maint">
+            <div class="svc-icon-wrap blue-bg">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3 class="svc-title">Maintenance & Support</h3>
+            <p class="svc-desc">Ongoing maintenance, security monitoring, and technical support so you can focus on growth.</p>
+            <ul class="svc-list">
+              <li><span class="check blue">✓</span> 24/7 Monitoring</li>
+              <li><span class="check blue">✓</span> Security Updates</li>
+              <li><span class="check blue">✓</span> Priority Support</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-label fade-up">Our Work</div>
+        <h2 class="section-title text-center fade-up">
+          Featured <span class="grad-text">Projects</span>
+        </h2>
+        <p class="section-sub text-center fade-up">
+          A curated showcase of our finest digital work — each built with precision and purpose.
+        </p>
+
+        <div class="portfolio-grid">
+
+          <div class="port-card white-card fade-up" id="port-superdeals">
+            <div class="port-img-wrap">
+              <div class="port-img p-img-1">
+                <div class="port-overlay">
+                  <a href="https://project5-peach-rho.vercel.app/" class="btn btn-gradient btn-sm port-live-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    View Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-info">
+              <span class="port-cat">Import / Export</span>
+              <h3 class="port-title">SUPERDEALS</h3>
+              <p class="port-desc">A full-featured import/export business website with product catalogues and multi-language support.</p>
+              <div class="port-tags">
+                <span>Web Design</span><span>Business</span><span>Global</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-card white-card fade-up d1" id="port-personal">
+            <div class="port-img-wrap">
+              <div class="port-img p-img-2">
+                <div class="port-overlay">
+                  <a href="https://kirthiga-s-tech-sphere.vercel.app/" class="btn btn-gradient btn-sm port-live-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    View Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-info">
+              <span class="port-cat">Portfolio</span>
+              <h3 class="port-title">Personal Portfolio Website</h3>
+              <p class="port-desc">A premium personal portfolio with smooth animations and interactive project showcases.</p>
+              <div class="port-tags">
+                <span>Portfolio</span><span>UI/UX</span><span>Animation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-card white-card fade-up d2" id="port-jewellery">
+            <div class="port-img-wrap">
+              <div class="port-img p-img-3">
+                <div class="port-overlay">
+                  <a href="https://regal-gemini-shoppe.vercel.app/" class="btn btn-gradient btn-sm port-live-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    View Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-info">
+              <span class="port-cat">Fashion & Jewellery</span>
+              <h3 class="port-title">Sri Karthika Fashion Jewellery</h3>
+              <p class="port-desc">An elegant e-commerce platform for a jewellery brand with luxurious UI and seamless shopping.</p>
+              <div class="port-tags">
+                <span>E-commerce</span><span>Fashion</span><span>Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="port-card white-card fade-up d3" id="port-realestate">
+            <div class="port-img-wrap">
+              <div class="port-img p-img-4">
+                <div class="port-overlay">
+                  <a href="https://www.prabhalands.com/" class="btn btn-gradient btn-sm port-live-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                    View Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="port-info">
+              <span class="port-cat">Real Estate</span>
+              <h3 class="port-title">Real Estate Business Website</h3>
+              <p class="port-desc">A sophisticated real estate platform with property listings, virtual tours, and lead generation.</p>
+              <div class="port-tags">
+                <span>Real Estate</span><span>Business</span><span>Lead Gen</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section id="stats" class="stats section">
+      <div class="container">
+        <div class="section-label fade-up">Our Numbers</div>
+        <h2 class="section-title text-center fade-up">
+          Proof in <span class="grad-text">Performance</span>
+        </h2>
+
+        <div class="stats-grid">
+
+          <div class="stat-card white-card fade-up" id="sc-projects">
+            <div class="stat-icon purple-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="stat-num" data-target="10">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Projects Delivered</div>
+            <div class="stat-sub">Across multiple industries</div>
+          </div>
+
+          <div class="stat-card white-card fade-up d1" id="sc-clients">
+            <div class="stat-icon pink-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="stat-num" data-target="9">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Happy Clients</div>
+            <div class="stat-sub">Long-term relationships</div>
+          </div>
+
+          <div class="stat-card white-card fade-up d2" id="sc-years">
+            <div class="stat-icon gold-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-num" data-target="3">0</div>
+            <div class="stat-suffix">Yrs</div>
+            <div class="stat-label">Years Experience</div>
+            <div class="stat-sub">Crafting excellence daily</div>
+          </div>
+
+          <div class="stat-card white-card fade-up d3" id="sc-satisfaction">
+            <div class="stat-icon blue-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="stat-num" data-target="100">0</div>
+            <div class="stat-suffix">%</div>
+            <div class="stat-label">Client Satisfaction</div>
+            <div class="stat-sub">We don't stop until you're thrilled</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-label fade-up">Get In Touch</div>
+        <h2 class="section-title text-center fade-up">
+          Let's Build Something <span class="grad-text">Amazing</span>
+        </h2>
+        <p class="section-sub text-center fade-up">
+          Ready to elevate your digital presence? We'd love to hear about your project.
+        </p>
+
+        <div class="contact-grid">
+
+          <!-- Info side -->
+          <div class="contact-info-col fade-left">
+            <div class="contact-info-card white-card">
+              <h3 class="cic-title">Contact Details</h3>
+
+              <a href="tel:+918754325192" class="cic-item" id="cic-phone">
+                <div class="cic-icon purple-bg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.88 15.4a19.79 19.79 0 01-3.07-8.67A2 2 0 013.79 4.7h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 12a16 16 0 006.07 6.07l1.36-1.36a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div class="cic-text">
+                  <span class="cic-label">Phone</span>
+                  <span class="cic-val">+91 8754325192</span>
+                </div>
+              </a>
+
+              <a href="mailto:dominova.office@gmail.com" class="cic-item" id="cic-email">
+                <div class="cic-icon pink-bg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="cic-text">
+                  <span class="cic-label">Email</span>
+                  <span class="cic-val">dominova.office@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/918754325192" class="cic-item" id="cic-wa" target="_blank" rel="noopener">
+                <div class="cic-icon green-bg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div class="cic-text">
+                  <span class="cic-label">WhatsApp</span>
+                  <span class="cic-val">Chat with us</span>
+                </div>
+              </a>
+
+              <a href="https://instagram.com/dominova.official" class="cic-item" id="cic-ig" target="_blank" rel="noopener">
+                <div class="cic-icon insta-bg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <div class="cic-text">
+                  <span class="cic-label">Instagram</span>
+                  <span class="cic-val">@dominova.official</span>
+                </div>
+              </a>
+
+              <div class="cic-social-row">
+                <a href="https://wa.me/918754325192" class="btn btn-green btn-sm" target="_blank" id="wa-cta">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp
+                </a>
+                <a href="https://instagram.com/dominova.official" class="btn btn-insta btn-sm" target="_blank" id="ig-cta">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  Follow Us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form side -->
+          <div class="contact-form-col fade-right">
+            <form class="contact-form white-card" id="contact-form" novalidate>
+              <h3 class="form-title">Send Us a Message</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text"  id="name"  name="name"  placeholder="John Doe"            required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com"    required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text"  id="subject" name="subject" placeholder="Project Inquiry" />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-gradient btn-full" id="form-submit">
+                <span class="btn-text">Send Message</span>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <div class="form-success" id="form-success">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Message sent! We'll get back to you within 24 hours.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="footer-top-row">
+          <a href="#home" class="footer-logo-wrap">
+            <img src="logo.png" alt="Dominova" class="footer-logo" />
+          </a>
+          <p class="footer-tagline">Crafting premium digital experiences that grow real businesses.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/918754325192" class="f-social" aria-label="WhatsApp" target="_blank">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://instagram.com/dominova.official" class="f-social" aria-label="Instagram" target="_blank">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:dominova.office@gmail.com" class="f-social" aria-label="Email">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-row">
+          <div class="footer-col">
+            <span class="fc-head">Services</span>
+            <a href="#services">Website Development</a>
+            <a href="#services">E-commerce Sites</a>
+            <a href="#services">UI/UX Design</a>
+            <a href="#services">Maintenance & Support</a>
+          </div>
+          <div class="footer-col">
+            <span class="fc-head">Company</span>
+            <a href="#about">About Us</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#stats">Our Results</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <span class="fc-head">Contact</span>
+            <a href="tel:+918754325192">+91 8754325192</a>
+            <a href="mailto:dominova.office@gmail.com">dominova.office@gmail.com</a>
+            <a href="https://wa.me/918754325192" target="_blank">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="footer-bottom-row">
+          <p>&copy; 2024 <strong>Dominova</strong>. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
